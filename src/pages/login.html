@@ -1,0 +1,51 @@
+<main id="siteContent" class="wrapper main" role="main">
+  <section class="section section-center">
+    <form class="form-small" data-abide novalidate>
+      <div class="form-section page-header">
+        <h1>Sign In</h1>
+        <p>Access your account to view event status, speaker details, and more.</p>
+      </div>
+
+      <div class="form-section">
+
+        <div class="grid-container full">
+          <div class="grid-x grid-margin-x">
+            <div class="cell large-6 form-group">
+              <label for="email">Email</label>
+              <input class="form-control" type="email" pattern="email" name="email" id="email"
+                placeholder="johndoe@email.com" required />
+              <span class="form-error">
+                Email is required.
+              </span>
+            </div>
+            <div class="cell large-6 form-group">
+              <label for="password">Password <span data-tooltip data-click-open="true" tabindex="0" title="Your password must be 8-50
+                characters and include a number, one
+                uppercase letter, and at least one lowercase letter."><i class="fas fa-info-circle"></i> <span
+                    class="show-for-sr">Password Requirements</span></span></label>
+              <input class="form-control" pattern="password" type="password" name="password" id="password"
+                placeholder="Passwordexample1" required />
+              <span class="form-error">
+                Password does not meet requirements.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section form-actions">
+        <button class="button" type="submit" value="Submit">
+          <i class="fas fa-check"></i> Sign In
+        </button>
+        <p class="help-text">
+          <a href="#!">Forgot Password?</a>
+        </p>
+      </div>
+
+      <div class="form-section form-alt">
+        <p class="lead">Don't have an account? <a href="/event-registration.html" title="Event Registration">Get Started
+            <i class="fas fa-long-arrow-alt-right"></i></a></p>
+      </div>
+    </form>
+  </section>
+</main>

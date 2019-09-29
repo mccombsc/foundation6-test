@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i,900,900i&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+
+<body class="login">
+  <header id="siteHeader" class="wrapper header headroom">
+      <section class="section">
+          <a class="logo-link logo-main" href="/">
+              <img class="logo-descon" src="assets/img/logo-design-conference.svg"
+                  alt="Design Conference Event logo" width="392" height="45" />
+          </a>
+          <nav class="nav-main">
+              <ul class="menu align-right">
+                  <li><a class="nav-link button clear" href="/login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+                  </li>
+                  <li><a class="nav-link button" href="/event-registration.html"><i class="fas fa-user-plus"></i> Event
+                          Registration</a></li>
+              </ul>
+          </nav>
+      </section>
+  </header>  <main id="siteContent" class="wrapper main" role="main">
+    <section class="section section-center">
+      <form class="form-small" data-abide novalidate>
+        <div class="form-section page-header">
+          <h1>Sign In</h1>
+          <p>Access your account to view event status, speaker details, and more.</p>
+        </div>
+  
+        <div class="form-section">
+  
+          <div class="grid-container full">
+            <div class="grid-x grid-margin-x">
+              <div class="cell large-6 form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="email" pattern="email" name="email" id="email"
+                  placeholder="johndoe@email.com" required />
+                <span class="form-error">
+                  Email is required.
+                </span>
+              </div>
+              <div class="cell large-6 form-group">
+                <label for="password">Password <span data-tooltip data-click-open="true" tabindex="0" title="Your password must be 8-50
+                  characters and include a number, one
+                  uppercase letter, and at least one lowercase letter."><i class="fas fa-info-circle"></i> <span
+                      class="show-for-sr">Password Requirements</span></span></label>
+                <input class="form-control" pattern="password" type="password" name="password" id="password"
+                  placeholder="Passwordexample1" required />
+                <span class="form-error">
+                  Password does not meet requirements.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="form-section form-actions">
+          <button class="button" type="submit" value="Submit">
+            <i class="fas fa-check"></i> Sign In
+          </button>
+          <p class="help-text">
+            <a href="#!">Forgot Password?</a>
+          </p>
+        </div>
+  
+        <div class="form-section form-alt">
+          <p class="lead">Don't have an account? <a href="/event-registration.html" title="Event Registration">Get Started
+              <i class="fas fa-long-arrow-alt-right"></i></a></p>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer id="siteFooter" class="wrapper footer">
+      <section class="section">
+          <p class="fine-print">&copy; 2019 Design Conference. All rights reserved.</p>
+      </section>
+  </footer>
+  <script src="https://unpkg.com/headroom.js@0.10.3/dist/headroom.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

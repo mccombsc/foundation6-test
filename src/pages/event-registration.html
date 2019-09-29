@@ -1,0 +1,181 @@
+<main id="siteContent" class="wrapper main" role="main">
+  <section class="section section-full section-center">
+    <form class="form-small" data-abide novalidate>
+      <div class="form-section page-header">
+        <h1>Event Registration</h1>
+        <p>Fill out the following information to complete your registration for the Design Conference.</p>
+        <div class="callout notice">
+          <p class="help-text">All fields are required unless specified otherwise.</p>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h2 class="lead">Contact Information</h2>
+        <div class="grid-container full">
+          <div class="grid-x grid-margin-x">
+            <div class="cell form-group">
+              <label for="email">Email</label>
+              <input class="form-control" type="email" pattern="email" name="email" id="email"
+                placeholder="johndoe@email.com" required />
+              <span class="form-error">
+                Email is required.
+              </span>
+            </div>
+
+            <div class="cell medium-6 form-group">
+              <label for="firstName">First Name</label>
+              <input class="form-control" type="text" name="firstName" id="firstName" placeholder="John" required />
+              <span class="form-error">
+                First name is required.
+              </span>
+            </div>
+            <div class="cell medium-6 form-group">
+              <label for="lastName">Last Name</label>
+              <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Doe" required />
+              <span class="form-error">
+                Last name is required.
+              </span>
+            </div>
+
+            <div class="cell large-6 form-group">
+              <label for="phone">Main Phone <small>(Optional)</small></label>
+              <input class="form-control" type="tel" name="phone" id="phone" placeholder="5155550987" />
+            </div>
+            <div class="cell large-6 form-group">
+              <label for="phone">Mobile Phone <small>(Optional)</small></label>
+              <input class="form-control" type="tel" name="mobilePhone" id="mobilePhone" placeholder="5155551234" />
+            </div>
+          </div>
+        </div>
+
+        <fieldset>
+          <legend class="show-for-sr">Address</legend>
+          <div class="grid-container full">
+            <div class="grid-x grid-margin-x">
+              <div class="cell medium-6 form-group">
+                <label for="addressOne">Address, Line One</label>
+                <input class="form-control" type="text" name="addressOne" id="addressOne" placeholder="123 Iowa Ave."
+                  required />
+                <span class="form-error">
+                  An address is required.
+                </span>
+              </div>
+              <div class="cell medium-6 form-group">
+                <label for="addressTwo">Address, Line Two <small>(Optional)</small></label>
+                <input class="form-control" type="text" name="addressTwo" id="addressTwo" placeholder="Suite 222" />
+              </div>
+              <div class="cell medium-4 form-group">
+                <label for="city">City</label>
+                <input class="form-control" type="text" name="city" id="city" placeholder="Nowhereville" required />
+                <span class="form-error">
+                  City is required.
+                </span>
+              </div>
+              <div class="cell medium-4 form-group">
+                <label for="state">State</label>
+                <select class="form-control" name="state" id="state" required>
+                  <option value="" selected disabled>Select State</option>
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="DC">District Of Columbia</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+                <span class="form-error">
+                  State selection is required.
+                </span>
+              </div>
+              <div class="cell medium-4 form-group">
+                <label for="zipCode">Zip Code</label>
+                <input class="form-control" minlength="5" maxlength="5" pattern="number" type="number" name="zipCode"
+                  id="zipCode" placeholder="00000" required />
+                <span class="form-error">
+                  A Zip/Postal Code is required.
+                </span>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="form-section">
+        <h2 class="lead">Create An Account</h2>
+        <p>Create an account by optionally entering a password. This way you won't have to fill out this form for other
+          events.</p>
+        <div class="cell form-group">
+          <p class="help-text" id="passwordHelpText"><i class="fas fa-info-circle"></i> Your password must be 8-50
+            characters and include a number, one
+            uppercase letter, and at least one lowercase letter.</p>
+          <label for="password">Password <small>(Optional)</small></label>
+          <input class="form-control" pattern="password" type="password" name="password" id="password"
+            placeholder="Passwordexample1" aria-describedby="passwordHelpText" />
+          <span class="form-error">
+            Password does not meet requirements.
+          </span>
+        </div>
+      </div>
+
+      <div class="form-section form-actions">
+        <button class="button clear" type="reset" value="Reset"><i class="fas fa-undo"></i> Reset Form</button>
+        <button class="button" type="submit" value="Submit">
+          <i class="fas fa-check"></i> Complete Registration
+        </button>
+        <p class="fine-print">
+          By submitting this form, you agree to Design Conference's
+          <a href="#!">Terms of Use</a> and <a href="#!">Privacy Policy</a>.
+        </p>
+      </div>
+
+      <div class="form-section form-alt">
+        <p class="lead">Already have an account? <a href="/login.html">Sign In <i
+              class="fas fa-long-arrow-alt-right"></i></a></p>
+      </div>
+    </form>
+  </section>
+</main>
